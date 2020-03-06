@@ -1,0 +1,40 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+#warning {
+  display: none; }
+
+ul {
+  margin: 0;
+  padding-left: 16px; }
+  ul li:hover {
+    cursor: pointer; }
+
+.hint {
+  display: none; }
+
+.content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.column {
+  width: 50%; }
+
+button {
+  display: block;
+  margin-top: 20px;
+  width: 200px; }
+
+input {
+  width: 200px;
+  display: block; }
