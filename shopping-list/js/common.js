@@ -17,7 +17,8 @@ title.focus()
 
 button.onclick = function () {
 
-    if (title.value != '' && price.value != '' && !isNaN(price.value)) {
+    if (title.value != '' && price.value != '' && !isNaN(price.value) && Number(price.value) > 0 ) {
+        console.log(price.value)
         var listItem = document.createElement('li');
         listItem.textContent = `${title.value} – \$${price.value}`;
         list.appendChild(listItem);
@@ -40,7 +41,7 @@ button.onclick = function () {
         warn.textContent = "Please, enter product name and price in correct format";
         warn.style.display = "block";
         title.focus();
-    } else if (price.value == '' || isNaN(price.value)) {
+    } else if (price.value == '' || isNaN(price.value) || Number(price.value) <= 0) {
         warn.textContent = "Please, enter price in correct format";
         warn.style.display = "block";
         price.focus();
@@ -49,6 +50,7 @@ button.onclick = function () {
         warn.style.display = "block";
         title.focus();
     }
+
 
     if (list.hasChildNodes()) {
         let listItems = document.querySelectorAll("li");
