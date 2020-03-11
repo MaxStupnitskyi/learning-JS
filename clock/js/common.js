@@ -68,7 +68,7 @@ checkbox.addEventListener('click', function () {
 // Auto dark mode
 if (localStorage.getItem('autoDarkMode') == 'on') {
     checkbox.checked = true;
-    if (hours < 7 || hours >= 23) {
+    if (hours < 7 || hours >= 19) {
         enableDarkMode()
         localStorage.setItem('darkMode', 'on');
     } else {
