@@ -2,4 +2,4 @@
 .sublime-gulp.cache
 package-lock.json
 /sass/*
-*/**/.DS_Store
+**/.DS_Store
