@@ -1,6 +1,8 @@
-/node_modules/*
+**/node_modules/*
 .sublime-gulp.cache
 package-lock.json
 /sass/*
 **/.DS_Store
 .DS_Store
+/calculator/*
+**/.vscode/*
